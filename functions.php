@@ -72,7 +72,7 @@ function displayItem($item) {
 
     echo '<div class="row m-5 bg-light" >
         <div class="col-sm-4">
-            <img src="'.$item["picture"].'" class="d-block mx-auto w-30 p-4" alt="...">
+            <img src="assets/'.$item["picture"].'" class="d-block mx-auto w-30 p-4" alt="...">
         </div>
         <div class="col-sm-4">
             <div class="d-flex">
