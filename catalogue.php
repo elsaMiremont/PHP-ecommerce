@@ -1,26 +1,22 @@
 <?php
+// Base de données contenant les données des articles.
+include_once ('data.php');
 
 // Bibliothèque de fonctions
 include("functions.php");
+?>
 
-// Les données de chaque item sont rangées dans un tableau à clés
-$products = [
-    [   "picture" => "assets/blue-love.png",
-        "name" => "Patch Blue Jeans",
-        "price" => 75
-    ],
-    [   "picture" => "assets/pink-dress.png",
-        "name" => "Pastel Pink Dress",
-        "price" => 88
-    ],
-    [   "picture" => "assets/cute-yellow.png",
-        "name" => "Pastis Top",
-        "price" => 65
-    ]
-];
+<form action="basket.php" method="post">
+    <?php foreach($products as $key => $item) { ?>
+        key : <?php echo $key; ?>
+        <pre><?php var_dump($products) ?></pre>
+    <?php displayItem($products); ?>
+    }
 
-// Affiche chaque item
-foreach ($products as $product) {
-    displayItem($product);
-}
+    <input type="number" name="item[<?php echo $key; ?>]" value="">
+    <hr>
+    <?php } ?>
+
+    <button class="m-5 bg-light" type="submit" name="submit">Valider</button>
+</form>
 

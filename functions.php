@@ -70,20 +70,19 @@ function displayItem3() {
 // Affiche n'importe quel item
 function displayItem($item) {
 
-    echo '<div class="row m-5 bg-light" >
+    echo '<div class="row m-5 bg-light w-100 d-flex" >
         <div class="col-sm-4">
-            <img src="assets/'.$item["picture"].'" class="d-block mx-auto w-30 p-4" alt="...">
+            <img src="'.$item["picture"].'" class="d-block mx-auto w-30 p-4" alt="...">
         </div>
         <div class="col-sm-4">
             <div class="d-flex">
-                <h2 class="font-weight-light text-center align-self-center">'.$item["name"].'</h2>
+                <h2 class="font-weight-light">'.$item["name"].'</h2>
             </div>
         </div>
-<div class="col-sm-4">
-    <h2 class="m-auto font-weight-light">'.$item["price"].' €</h2>
-</div>
+        <div class="col-sm-4">
+            <h2 class="m-auto font-weight-light">'.$item["price"].' €</h2>
+        </div>
 </div>';
 }
-
 
 
