@@ -2,6 +2,7 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/BDD/PHP_BDD_query_playground" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/PHP_mini-projet-foreach" vcs="Git" />
   </component>
 </project>

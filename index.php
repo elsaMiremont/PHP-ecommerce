@@ -14,7 +14,7 @@
     </nav>
 
 
-    <!-- Affiche un catalogue de 3 items -->
+    <!-- Affiche le catalogue avec formulaire -->
     <?php include("catalogue.php");?>
 
 </body>
